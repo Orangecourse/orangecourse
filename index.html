@@ -80,7 +80,40 @@
     }
   </style>
 </head>
-<body>
+<body><!-- Formulir Pendaftaran Orange Course --><section id="form-daftar" style="padding: 2rem; background: #fff7f0; border-radius: 8px; max-width: 600px; margin: 2rem auto;">
+  <h2 style="color: #e67e22; text-align: center;">Daftar Orange Course</h2>
+  <form id="daftarForm" onsubmit="return kirimWA()" style="display: flex; flex-direction: column; gap: 1rem;">
+    <input type="text" id="nama" placeholder="Nama Lengkap" required style="padding: 0.8rem; font-size: 1rem;" />
+    <input type="text" id="wa" placeholder="Nomor WhatsApp" required style="padding: 0.8rem; font-size: 1rem;" />
+    <select id="program" required style="padding: 0.8rem; font-size: 1rem;">
+      <option value="" disabled selected>Pilih Program</option>
+      <option value="SMP">SMP</option>
+      <option value="SMA">SMA</option>
+    </select>
+    <textarea id="catatan" placeholder="Catatan tambahan (opsional)" rows="3" style="padding: 0.8rem; font-size: 1rem;"></textarea>
+    <button type="submit" style="background: #e67e22; color: white; padding: 0.8rem; font-size: 1.1rem; border: none; border-radius: 4px; cursor: pointer;">
+      Daftar Sekarang
+    </button>
+  </form>
+</section><script>
+  function kirimWA() {
+    const nama = document.getElementById("nama").value.trim();
+    const wa = document.getElementById("wa").value.trim();
+    const program = document.getElementById("program").value;
+    const catatan = document.getElementById("catatan").value.trim();
+
+    if (!nama || !wa || !program) {
+      alert("Mohon lengkapi Nama, WhatsApp, dan Program.");
+      return false;
+    }
+
+    const pesan = `Halo, saya mau daftar Orange Course.%0ANama: ${encodeURIComponent(nama)}%0AWA: ${encodeURIComponent(wa)}%0AProgram: ${encodeURIComponent(program)}${catatan ? `%0ACatatan: ${encodeURIComponent(catatan)}` : ""}`;
+    const nomorTujuan = "628819252377";
+
+    window.open(`https://wa.me/${nomorTujuan}?text=${pesan}`, "_blank");
+    return false;
+  }
+</script>
   <header>
     <img src="logo.png" alt="Logo Orange Course" />
     <h1>Bimbel Matematika Orange Course</h1>
