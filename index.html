@@ -1,193 +1,159 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orange Course - Bimbel Matematika SMP & SMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff8f0;
+      font-family: 'Nunito', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #fffaf3;
       color: #333;
     }
-    header, section, footer {
-      padding: 20px;
+    header {
+      background-color: #ff7a00;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    .logo {
+      max-width: 180px;
+      margin: 0 auto 1rem;
+    }
+    header h1 {
+      margin: 0.25rem 0 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.25rem 0 1rem;
+      font-size: 1.1rem;
+    }
+    .section {
+      padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
     }
-    header {
-      background-color: #ffa500;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    h2 {
-      color: #ff6600;
-    }
     .highlight {
-      background-color: #fff0d9;
-      padding: 10px;
-      border-left: 4px solid #ffa500;
-      margin: 20px 0;
-    }
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 10px 0;
-      background-color: #ffa500;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
+      color: #ff7a00;
       font-weight: bold;
     }
-    .button:hover {
-      background-color: #ff8800;
+    .button {
+      background-color: #ff7a00;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
     }
-    .form-group {
-      margin-bottom: 12px;
+    .testimoni, .story {
+      background-color: #fff3e0;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 1rem 0;
     }
-    label {
-      display: block;
-      margin-bottom: 4px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
     }
     input, textarea {
-      width: 100%;
-      padding: 10px;
+      padding: 0.75rem;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .info-admin {
+      background-color: #ffe0b2;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
     }
     footer {
-      background-color: #ffedcc;
       text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
-    }
-    .quote {
-      font-style: italic;
-      background-color: #fffaf0;
-      padding: 15px;
-      border-left: 5px solid #ffa500;
-      margin: 20px 0;
+      padding: 1rem;
+      background-color: #ff7a00;
+      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🟧 ORANGE COURSE</h1>
-    <p>Bimbel Khusus Matematika SMP & SMA</p>
-  </header>
+<header>
+  <img src="logo-orange-course.png" alt="Logo Orange Course" class="logo" />
+  <h1>Orange Course</h1>
+  <p>Bimbel Asyik, Nilai Naik!</p>
+  <a class="button" href="https://wa.me/628819252377?text=Halo%20Orange%20Course%2C%20saya%20ingin%20bertanya%20tentang%20bimbel.">Hubungi via WhatsApp</a>
+</header>
 
-  <section>
-    <h2>✨ Bimbel Prestasi Cemerlang</h2>
-    <p>Belajar Lebih Mudah, Nilai Lebih Tinggi!</p>
-  </section>
+<section class="section">
+  <h2>Kenapa Memilih Orange Course?</h2>
+  <p>Kami fokus pada pembelajaran <span class="highlight">Matematika</span> untuk SMP dan SMA. Pendekatan kami <strong>fun, terarah, dan sesuai kurikulum</strong>. Dibimbing oleh tutor berpengalaman dan sabar.</p>
+</section>
 
-  <section class="highlight">
-    <p><strong>Hai Ayah/Bunda 👋,</strong><br />
-    Saya ingin berbagi info tentang Bimbel Orange Course yang saya kelola.</p>
-    <ul>
-      <li>📚 Belajar semi privat, maksimal 8 siswa per kelas.</li>
-      <li>📌 Khusus siswa SMP & SMA</li>
-      <li>📘 Mata Pelajaran: ✔️ Matematika</li>
-    </ul>
-  </section>
+<section class="section">
+  <h2>Testimoni Siswa</h2>
+  <div class="testimoni">
+    <p><em>"Awalnya aku takut matematika. Setelah ikut Orange Course, nilainya naik dan aku mulai suka!"</em></p>
+    <strong>- Rani, SMP Kelas 9</strong>
+  </div>
+  <div class="testimoni">
+    <p><em>"Cara ngajarnya asyik, banyak latihan soal, dan aku lulus UTBK berkat bimbingan di sini!"</em></p>
+    <strong>- Ilham, SMA Kelas 12</strong>
+  </div>
+</section>
 
-  <section>
-    <h2>💡 Metode Belajar Unggulan</h2>
-    <ul>
-      <li>✅ Interaktif & Mudah Dipahami</li>
-      <li>✅ Free Konsultasi PR</li>
-      <li>✅ Latihan Soal Intensif</li>
-      <li>✅ Persiapan Ujian Sekolah & UTBK</li>
-      <li>✅ Belajar Offline</li>
-    </ul>
-  </section>
+<section class="section">
+  <h2>Cerita dari Orang Tua</h2>
+  <div class="story">
+    <p>"Anak saya dulu kesulitan memahami konsep dasar matematika. Setelah ikut Orange Course, dia jadi lebih percaya diri dan mandiri saat belajar. Terima kasih Orange Course!"</p>
+    <strong>- Ibu Dina</strong>
+  </div>
+</section>
 
-  <section class="highlight">
-    <h2>🎁 GRATIS Kelas Uji Coba!</h2>
-    <p>🎓 Banyak siswa kami naik nilai hanya dalam 1 bulan!</p>
-    <p>👬 Ajak Teman Dapat Diskon!</p>
-  </section>
+<section class="section info-admin">
+  <h2>Ingin Tahu Biaya dan Jadwal?</h2>
+  <p>Silakan hubungi admin kami langsung melalui WhatsApp untuk info lengkap:</p>
+  <a class="button" href="https://wa.me/628819252377?text=Halo%20Orange%20Course%2C%20saya%20ingin%20mengetahui%20biaya%20dan%20jadwal%20bimbel.">Tanya Admin via WhatsApp</a>
+</section>
 
-  <section>
-    <h2>👩‍👦 Cerita dari Orang Tua Murid</h2>
-    <div class="quote">
-      “Anak saya awalnya merasa kesulitan mengikuti pelajaran Matematika di sekolah. Setelah ikut Orange Course, dia mulai paham konsep, lebih percaya diri, bahkan jadi suka Matematika! Nilainya naik dari 60 ke 85 dalam waktu 1,5 bulan. Terima kasih Orange Course, guru-gurunya sabar dan sangat mendukung.”<br />
-      — Ibu Rina, orang tua siswa kelas 8
-    </div>
-  </section>
+<section class="section">
+  <h2>Daftar Sekarang</h2>
+  <form onsubmit="kirimWhatsApp(event)">
+    <input type="text" id="nama" placeholder="Nama Lengkap" required />
+    <input type="text" id="kelas" placeholder="Kelas (misal: 9 SMP)" required />
+    <input type="text" id="namaOrtu" placeholder="Nama Orang Tua/Wali" required />
+    <input type="tel" id="kontak" placeholder="Nomor WhatsApp Aktif" required />
+    <textarea id="catatan" placeholder="Catatan tambahan (opsional)"></textarea>
+    <button type="submit" class="button">Kirim via WhatsApp</button>
+  </form>
+</section>
 
-  <section>
-    <h2>💬 Testimoni Siswa</h2>
-    <div class="quote">🗣️ “Enak banget belajarnya, gurunya ngerti cara ngajarnya biar gampang dimengerti. Aku jadi nggak takut Matematika lagi.”<br />— Dina, Kelas 9</div>
-    <div class="quote">🗣️ “Soalnya banyak dan variatif, jadi waktu ujian nggak kaget. Nilai matematika UTBK-ku naik signifikan.”<br />— Rafi, Kelas 12</div>
-  </section>
+<footer>
+  <p>© 2025 Orange Course | Email: dinadewi18@gmail.com</p>
+</footer>
 
-  <section id="biaya">
-    <h2>💸 Rincian Biaya Bimbel</h2>
-    <ul>
-      <li>✨ SMP: Rp200.000/bln</li>
-      <li>✨ SMA: Rp200.000/bln</li>
-      <li>🎁 Biaya kelas privat: Rp50.000/per pertemuan</li>
-    </ul>
-  </section>
+<script>
+  function kirimWhatsApp(event) {
+    event.preventDefault();
+    const nama = document.getElementById('nama').value;
+    const kelas = document.getElementById('kelas').value;
+    const ortu = document.getElementById('namaOrtu').value;
+    const kontak = document.getElementById('kontak').value;
+    const catatan = document.getElementById('catatan').value;
 
-  <section>
-    <h2>📝 ISI FORMULIR & DAFTAR SEKARANG</h2>
-    <p>Formulir ini akan otomatis dikirim ke WhatsApp admin kami.</p>
-    <form onsubmit="sendToWhatsApp(event)">
-      <div class="form-group">
-        <label>Nama Lengkap</label>
-        <input type="text" id="nama" required />
-      </div>
-      <div class="form-group">
-        <label>Kelas (misal: 8 SMP, 12 SMA)</label>
-        <input type="text" id="kelas" required />
-      </div>
-      <div class="form-group">
-        <label>Nomor HP Orang Tua</label>
-        <input type="text" id="telepon" required />
-      </div>
-      <div class="form-group">
-        <label>Catatan Tambahan (opsional)</label>
-        <textarea id="catatan"></textarea>
-      </div>
-      <button class="button" type="submit">Kirim ke WhatsApp</button>
-    </form>
-  </section>
+    const pesan = `Halo Orange Course! Saya ingin mendaftar:\n\nNama: ${nama}\nKelas: ${kelas}\nNama Orang Tua: ${ortu}\nKontak: ${kontak}\nCatatan: ${catatan}`;
 
-  <section>
-    <h2>📍 Lokasi & Kontak</h2>
-    <p>📍 Tepat di samping SMPN 2 REMBANG</p>
-    <p>📞 WA Admin: <a href="https://wa.me/628819252377" class="button">Chat WhatsApp</a></p>
-    <p>📆 Jadwal Fleksibel | Kuota Terbatas!</p>
-  </section>
-
-  <footer>
-    <h2>🔶 Gabung Sekarang & Wujudkan Prestasi Terbaikmu! 🔶</h2>
-    <p>&copy; 2025 Orange Course</p>
-  </footer>
-
-  <script>
-    function sendToWhatsApp(event) {
-      event.preventDefault();
-      const nama = document.getElementById("nama").value;
-      const kelas = document.getElementById("kelas").value;
-      const telepon = document.getElementById("telepon").value;
-      const catatan = document.getElementById("catatan").value;
-
-      const message = `Pendaftaran Bimbel Orange Course%0A%0ANama: ${nama}%0AKelas: ${kelas}%0AHP Orang Tua: ${telepon}%0ACatatan: ${catatan}`;
-      const whatsappURL = `https://wa.me/628819252377?text=${message}`;
-      window.open(whatsappURL, '_blank');
-    }
-  </script>
+    const url = `https://wa.me/628819252377?text=${encodeURIComponent(pesan)}`;
+    window.open(url, '_blank');
+  }
+</script>
 
 </body>
-          </html>
+  </html>
