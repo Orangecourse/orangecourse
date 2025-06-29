@@ -80,19 +80,38 @@
     }
   </style>
 </head>
-<body><!-- Formulir Pendaftaran Orange Course --><section id="form-daftar" style="padding: 2rem; background: #fff7f0; border-radius: 8px; max-width: 600px; margin: 2rem auto;">
-  <h2 style="color: #e67e22; text-align: center;">Daftar Orange Course</h2>
-  <form id="daftarForm" onsubmit="return kirimWA()" style="display: flex; flex-direction: column; gap: 1rem;">
-    <input type="text" id="nama" placeholder="Nama Lengkap" required style="padding: 0.8rem; font-size: 1rem;" />
-    <input type="text" id="wa" placeholder="Nomor WhatsApp" required style="padding: 0.8rem; font-size: 1rem;" />
-    <select id="program" required style="padding: 0.8rem; font-size: 1rem;">
-      <option value="" disabled selected>Pilih Program</option>
-      <option value="SMP">SMP</option>
-      <option value="SMA">SMA</option>
-    </select>
-    <textarea id="catatan" placeholder="Catatan tambahan (opsional)" rows="3" style="padding: 0.8rem; font-size: 1rem;"></textarea>
-    <button type="submit" style="background: #e67e22; color: white; padding: 0.8rem; font-size: 1.1rem; border: none; border-radius: 4px; cursor: pointer;">
-      Daftar Sekarang
+<body><!-- <!-
+    </button>
+  </form>
+</section>
+
+<script>
+  function kirimWA() {
+    const nama = document.getElementById("nama").value.trim();
+    const wa = document.getElementById("wa").value.trim();
+    const alamat = document.getElementById("alamat").value.trim();
+    const program = document.getElementById("program").value;
+    const kelas = document.getElementById("kelas").value;
+    const catatan = document.getElementById("catatan").value.trim();
+
+    if (!nama || !wa || !alamat || !program || !kelas) {
+      alert("Mohon lengkapi semua data wajib.");
+      return false;
+    }
+
+    const pesan = `Halo, saya mau daftar Orange Course.%0A` +
+                  `Nama: ${encodeURIComponent(nama)}%0A` +
+                  `No WA: ${encodeURIComponent(wa)}%0A` +
+                  `Alamat: ${encodeURIComponent(alamat)}%0A` +
+                  `Program: ${encodeURIComponent(program)}%0A` +
+                  `Kelas: ${encodeURIComponent(kelas)}${catatan ? `%0A` +
+                  `Catatan: ${encodeURIComponent(catatan)}` : ""}`;
+
+    const nomorTujuan = "628819252377";
+    window.open(`https://wa.me/${nomorTujuan}?text=${pesan}`, "_blank");
+    return false;
+  }
+</script>
     </button>
   </form>
 </section><script>
@@ -123,8 +142,39 @@
   <section class="hero">
     <h2>Belajar Matematika Jadi Seru dan Mudah!</h2>
     <p>Gabung bersama ratusan siswa yang sudah terbukti meningkat nilainya dengan metode unik dan menyenangkan dari Orange Course.</p>
-    <a href="https://wa.me/628819252377" class="cta-button" target="_blank">Daftar via WhatsApp</a>
-  </section>
+    <a <a href="#biaya" class="button">Lihat Biaya Bimbel</a>  </section><section id="biaya" style="padding: 2rem; background-color: #fff7f0;">
+  <h2 style="color: #e67e22;">Biaya Bimbel Orange Course</h2>
+  <ul style="font-size: 1rem; color: #333;">untuk program kelompok
+    <li>SMP: Rp200.000/bulan</li>
+    <li>SMA: Rp200.000/bulan</li>
+    <li>Privat (1 siswa): Rp50.000/per pertemuan</li>
+  </ul>
+  <p>Hubungi kami untuk info promo dan diskon!</p>
+    </section>
+  - Formulir Pendaftaran Orange Course -->
+<section id="form-daftar" style="padding: 2rem; background: #fff7f0; border-radius: 8px; max-width: 600px; margin: 2rem auto;">
+  <h2 style="color: #e67e22; text-align: center;">Daftar Orange Course</h2>
+  <form id="daftarForm" onsubmit="return kirimWA()" style="display: flex; flex-direction: column; gap: 1rem;">
+    <input type="text" id="nama" placeholder="Nama Lengkap" required style="padding: 0.8rem; font-size: 1rem;" />
+    <input type="text" id="wa" placeholder="Nomor WhatsApp" required style="padding: 0.8rem; font-size: 1rem;" />
+    <input type="text" id="alamat" placeholder="Alamat Lengkap" required style="padding: 0.8rem; font-size: 1rem;" />
+    <select id="program" required style="padding: 0.8rem; font-size: 1rem;">
+      <option value="" disabled selected>Pilih Program</option>
+      <option value="SMP">SMP</option>
+      <option value="SMA">SMA</option>
+    </select>
+    <select id="kelas" required style="padding: 0.8rem; font-size: 1rem;">
+      <option value="" disabled selected>Pilih Kelas</option>
+      <option value="7">7 SMP</option>
+      <option value="8">8 SMP</option>
+      <option value="9">9 SMP</option>
+      <option value="10">10 SMA</option>
+      <option value="11">11 SMA</option>
+      <option value="12">12 SMA</option>
+    </select>
+    <textarea id="catatan" placeholder="Catatan tambahan (opsional)" rows="3" style="padding: 0.8rem; font-size: 1rem;"></textarea>
+    <button type="submit" style="background: #e67e22; color: white; padding: 0.8rem; font-size: 1.1rem; border: none; border-radius: 4px; cursor: pointer;">
+      Daftar Sekarang
 
   <section class="details">
     <p>🟧 <strong>ORANGE COURSE</strong></p>
